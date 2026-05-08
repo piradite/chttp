@@ -1,0 +1,19 @@
+#ifndef CHTTP_ERROR_H
+#define CHTTP_ERROR_H
+
+typedef enum {
+    CHTTP_OK = 0,
+    CHTTP_ERR_OOM = -1,
+    CHTTP_ERR_INVAL = -2,
+    CHTTP_ERR_IO = -3,
+    CHTTP_ERR_NOT_FOUND = -4,
+    CHTTP_ERR_BAD_REQUEST = -5,
+    CHTTP_ERR_METHOD_NOT_ALLOWED = -6,
+    CHTTP_ERR_INCOMPLETE = -7,
+    CHTTP_ERR_MALFORMED = -8,
+    CHTTP_ERR_SYS = -9,
+    CHTTP_ERR_FORBIDDEN = -10,
+    CHTTP_ERR_TOOLARGE = -11
+} CHttpError;
+
+#endif
